@@ -1,0 +1,21 @@
+GIT CONFIG:
+-------------
+git config --global user.name IvanSSantana
+git config --global user.email ivansantospriv@gmail.com
+
+CRIAR PROJETO:
+-------------
+npx create-expo-app@latest FantechTODOApp --template blank
+
+EXECUTAR PROJETO:
+-------------
+cd FantechTODOApp
+npx expo start --android --localhost
+
+INSTALAR EXPO-ROUTER:
+-------------
+npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
+
+PRIMEIRA INICIALIZAÇÃO:
+-------------
+npx expo start --clear
