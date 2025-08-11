@@ -1,6 +1,7 @@
 import { Image, View, Text, ScrollView, TouchableOpacity } from "react-native";
 import { POKEMON_TYPE_COLORS } from "../../utils/colors";
 import { styles } from "./styles";
+import Button from "../Button";
 
 export default function Card({ pokemon }) {
     return (
@@ -14,13 +15,13 @@ export default function Card({ pokemon }) {
             <Text style={styles.nome}>{pokemon.Nome}</Text>
             <ScrollView horizontal>
                 {pokemon.Tipo.map((tipo) => (
-                    <Text>{tipo.Nome}</Text>
+                    <Button tipo={tipo} key={tipo.Nome} />
                 ))}
             </ScrollView>
         </View>  
 
         <View style={styles.imageContainer}>
-            <Image source={{ uri: pokemon.Image}} style={styles.imagem} />
+            <Image source={{ uri: pokemon.Imagem }} style={styles.imagem} />
         </View>
         </TouchableOpacity>
     )
