@@ -1,10 +1,8 @@
 import { useLocalSearchParams } from "expo-router";
-import { Dimensions } from "react-native";
+import { Dimensions, Image, StyleSheet, ScrollView, View } from "react-native";
 import Button from "../components/Button";
 import Header from "../components/Header";
 import TextInfo from "../components/TextInfo";
-import { backgrounds } from "polished";
-import { styles } from "../components/Button/styles";
 
 const width = Dimensions.get("window").width;
 
@@ -21,7 +19,7 @@ export default function PokemonDetail() {
       <View style={[styles.card, { backgroundColor: tipos[0].Cor }]}>
         <View style={styles.imageContainer}>
           <Image source={{ uri: pokemon.Imagem }}
-            styles={styles.image} />
+            style={styles.image} />
         </View>
 
         <ScrollView

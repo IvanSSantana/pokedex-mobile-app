@@ -13,13 +13,13 @@ export default function Index() {
     <View style={styles.container}>
       <Header title="Pokédex" />
       <FlatList
-      data={pokemons}
-      style={styles.cards}
-      keyExtractor={(pokemon) => pokemon.Numero.toString()}
-      renderItem={ renderPokemon }
-      initialNumToRender={10}
-      maxToRenderPerBatch={10}
-      windowSize={5}
+        data={pokemons}
+        style={styles.cards}
+        keyExtractor={(pokemon) => pokemon.Numero.toString()}
+        renderItem={ renderPokemon }
+        initialNumToRender={10}
+        maxToRenderPerBatch={10}
+        windowSize={5}
       /> 
     </View>
   );

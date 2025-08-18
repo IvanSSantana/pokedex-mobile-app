@@ -2,7 +2,7 @@ import { Image, View, Text, ScrollView, TouchableOpacity } from "react-native";
 import { POKEMON_TYPE_COLORS } from "../../utils/colors";
 import { styles } from "./styles";
 import Button from "../Button";
-import { router, useRouter } from 'expo-router';
+import { router } from 'expo-router';
 
 export default function Card({ pokemon }) {
     return (
